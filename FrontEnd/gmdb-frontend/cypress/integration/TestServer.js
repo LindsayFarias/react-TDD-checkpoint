@@ -10,9 +10,38 @@ describe("Home page", () => {
     })
 
     //find is async
-    it("The Home Page Exists", () => {
-        cy.findByRole('heading').should('contain', 'GMBD')
+    it("The Home Page Exists", async () => {
+
+        let navBar = await cy.findByRole('navigation')
+        expect(navBar).to.contain('GMDB')
+        
     })
+
+    it("Should Display movies in browser", async () => {
+
+        await cy.get('div[class= "movie-card"]')
+                .find("img")
+                .should('be.visible')
+        
+    })
+
+    it("Should take you to movie page when a movie is selected", () => {
+        //setup
+        let movieName = 'Guardians of the Galaxy Vol. 2'
+        //act
+        cy.get('div[class= "movie-card"]')
+                .find('[alt = "Guardians of the Galaxy Vol. 2"]')
+                .click()
+        cy.get('div[class= "indivMovie"]')
+            .findByText(movieName)
+            .should('exist')
+    })
+
+    // it("Should display movie information on the movie page", () => {
+
+        
+
+    // })
 
 
 /*
@@ -26,7 +55,7 @@ describe("Home page", () => {
 */
 
 
-    //test that movies are pulled from API
+    //test that movies are pulled from API--good
 
     //test to see if login button is present
 

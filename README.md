@@ -64,12 +64,12 @@ In a new directory
 ###### USER STORIES #############
 Mandatory Users Stories
 As a user I:
-Want to be presented with a list of movies on the main page
-want to see details and reviews of a movie when I click on a specific movie
-Want to be able to search for a movie
-Want to be able to post a review for a movie I have seen
-Want to be able to Register as a user
-Want to be able to log in
+[/]Want to be presented with a list of movies on the main page
+[]want to see details and reviews of a movie when I click on a specific movie
+[]Want to be able to search for a movie
+[]Want to be able to post a review for a movie I have seen
+[]Want to be able to Register as a user
+[]Want to be able to log in
 
 ### Features:
 - Browse movies anonymously

@@ -1,0 +1,11 @@
+.movie-card{
+    margin: 1vw;
+    background-color: #03011b;
+    color:aliceblue;
+    width: 25%;
+    height: 25%;
+    border-radius: 10% 30%;
+    border-style: outset;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
