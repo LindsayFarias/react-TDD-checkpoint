@@ -59,3 +59,34 @@ In a new directory
 - to test your app, run `npm run test`
 - to run your app, run `npm run start`
 - - The server will be available at `http://localhost:3000` 
+
+
+###### USER STORIES #############
+Mandatory Users Stories
+As a user I:
+Want to be presented with a list of movies on the main page
+want to see details and reviews of a movie when I click on a specific movie
+Want to be able to search for a movie
+Want to be able to post a review for a movie I have seen
+Want to be able to Register as a user
+Want to be able to log in
+
+### Features:
+- Browse movies anonymously
+- Look at a specific movie with details and reviews
+- Search movies
+- Post a review on a movie
+- Register a new user
+
+### Designs:
+- Browsing Movies
+![View for browsing movies](images/Browse-Movies.png)
+
+- Movie Details and Reviews
+![movie details with corresponding review section](images/Movie-Detail-and-Post-Review.png) 
+
+- Searching for movies
+![filtered movie list view based on search criteria](images/Search.png)
+
+- Login
+![view of a login screen](images/Login.png)
