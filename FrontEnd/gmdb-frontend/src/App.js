@@ -1,4 +1,4 @@
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.svg';
 import './App.css';
 
@@ -6,13 +6,29 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <nav className="navbar navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-md navbar-dark bg-dark">
           <div className="container-fluid">
             <img src={logo} className="App-logo" alt="logo" />
-            <div className="navbar-brand">React Brand Products</div>
+            <a className="navbar-brand" href="index.html">GMDB</a>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarCollapse">
+              <ul className="navbar-nav me-auto mb-2 mb-md-0">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">Login</a>
+                </li>
+              </ul>
+              <form className="d-flex">
+                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button className="btn btn-outline-warning ms-2" type="submit">Search</button>
+              </form>
+            </div>
           </div>
         </nav>
-        <img src={logo} className="App-logo" alt="logo" />
       </header>
     </div>
   );
